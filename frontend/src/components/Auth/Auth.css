@@ -1,0 +1,112 @@
+/* src/components/Auth/Auth.css */
+.auth-page {
+    display: flex;
+    min-height: 100vh;
+    background: url('./bac.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+.auth-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Затемнение фона */
+    z-index: 1;
+}
+
+.auth-container {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 340px; /* Уменьшенная ширина формы */
+    margin-left: auto; /* Сдвиг вправо */
+    margin-right: 10%; /* Отступ от правого края */
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+}
+
+.auth-form {
+    background-color: #ffffff;
+    border: 1px solid #d0d0d0;
+    border-radius: 6px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.auth-form h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование полей в форме */
+}
+
+.form-group label {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 85%; /* Уменьшено для центрирования */
+    max-width: 280px;
+    padding: 8px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    font-size: 0.95em;
+    color: #2c2c2c;
+    text-align: left; /* Текст внутри поля выравнивается слева */
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #1e5bb5;
+}
+
+.auth-button {
+    width: 85%;
+    max-width: 280px;
+    padding: 8px;
+    background-color: #1e5bb5;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.95em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin: 0 auto;
+    display: block;
+}
+
+.auth-button:hover {
+    background-color: #143f8a;
+}
+
+.error-message {
+    text-align: center;
+    color: #d32f2f;
+    font-size: 0.85em;
+    margin-bottom: 12px;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #fce4e4;
+    width: 85%;
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}

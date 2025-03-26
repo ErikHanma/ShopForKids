@@ -1,0 +1,144 @@
+.header {
+    background-color: #282c34;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #61dafb;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/* Кнопка Каталог */
+.catalog-btn {
+    display: flex;
+    align-items: center;
+    background-color: #007AFF;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.catalog-icon {
+    margin-right: 8px;
+    color: #b3d4ff; /* Светло-голубой для иконки */
+}
+
+/* Поиск */
+.search-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin: 0 20px;
+    position: relative; /* Для позиционирования подсказок */
+}
+
+.react-autosuggest__input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #007AFF;
+    border-radius: 8px 0 0 8px; /* Скругление только слева */
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.search-btn {
+    background-color: #007AFF;
+    border: none;
+    padding: 10px;
+    border-radius: 0 8px 8px 0; /* Скругление только справа */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn svg {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.react-autosuggest__suggestions-container--open {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    max-height: 200px;
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.react-autosuggest__suggestion {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.react-autosuggest__suggestion--highlighted {
+    background-color: #f0f0f0;
+}
+
+/* Навигация */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #A9A9A9;
+    text-decoration: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.nav-icon svg {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.nav-icon span {
+    color: #A9A9A9;
+}
+
+.nav-icon:hover {
+    color: #61dafb;
+}
+
+.nav-icon:hover span {
+    color: #61dafb;
+}
+
+.logout-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}

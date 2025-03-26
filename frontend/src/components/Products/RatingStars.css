@@ -1,0 +1,32 @@
+/* src/components/Products/RatingStars.css */
+.rating-stars {
+    display: inline-flex;
+    align-items: center;
+}
+
+.star {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.full {
+    color: gold; /* Полные звёзды — золотые */
+}
+
+.half {
+    color: lightgray; /* Основа полузвезды — серая */
+    position: relative;
+}
+
+.half::before {
+    content: '★';
+    position: absolute;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    color: gold; /* Половина звезды — золотая */
+}
+
+.empty {
+    color: lightgray; /* Пустые звёзды — серые */
+}

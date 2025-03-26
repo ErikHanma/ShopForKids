@@ -1,0 +1,87 @@
+/* src/components/Products/ProductItem.css */
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; /* Тонкая серая рамка для чёткости */
+    border-radius: 8px; /* Скругление чуть меньше для строгости */
+    padding: 20px;
+    max-width: 250px; /* Ограничиваем ширину */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Равномерное распределение элементов */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); /* Лёгкая тень для глубины */
+    transition: box-shadow 0.2s ease; /* Плавный переход для тени */
+}
+
+.product-card:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Лёгкое усиление тени при наведении */
+    /* Убрано увеличение (transform: scale) */
+}
+
+.product-image {
+    width: 100%;
+    height: 180px; /* Чуть больше высота для пропорций */
+    object-fit: cover; /* Изображение заполняет контейнер */
+    border-radius: 6px; /* Скругление изображения */
+    margin-bottom: 15px; /* Отступ снизу */
+}
+
+.product-name {
+    font-size: 1.1em; /* Чуть меньше, чтобы выглядело аккуратнее */
+    font-weight: 600; /* Полужирный для акцента */
+    color: #333; /* Тёмно-серый для строгости */
+    margin: 0 0 10px 0; /* Отступ снизу */
+    line-height: 1.2; /* Компактнее строки */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #666; /* Серый для текста */
+    margin: 0 0 15px 0;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Обрезка длинного текста */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Ограничение на 2 строки */
+    -webkit-box-orient: vertical;
+}
+
+.product-price {
+    font-size: 1.2em;
+    font-weight: 700; /* Жирный для цены */
+    color: #2c2c2c; /* Тёмный цвет для контраста */
+    margin: 0 0 15px 0;
+}
+
+.buy-button {
+    padding: 10px;
+    background-color: #2a7ae2; /* Более сдержанный синий */
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.95em;
+    font-weight: 500; /* Средняя толщина текста */
+    cursor: pointer;
+    transition: background-color 0.2s ease; /* Плавный переход цвета */
+}
+
+.buy-button:hover {
+    background-color: #1e5bb5; /* Темнее при наведении */
+}
+
+.modal {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(46, 204, 113, 0.95); /* Более мягкий зелёный */
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Тень для модалки */
+}

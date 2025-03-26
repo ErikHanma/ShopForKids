@@ -1,0 +1,33 @@
+.admin-product-list {
+    margin-top: 20px;
+}
+
+.admin-product-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.admin-product-list th, .admin-product-list td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.admin-product-list th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+.admin-product-list button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.admin-product-list button:hover {
+    background-color: #ff1a1a;
+}
