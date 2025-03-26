@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  postgres:
+    container_name: localPostgresSQLDB3св
+    image: postgres
+    environment:
+      POSTGRES_DB: "giftshop"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "12345"
+    ports:
+      - "5732:5432"
